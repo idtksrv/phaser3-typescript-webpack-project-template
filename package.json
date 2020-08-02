@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git"
+    "url": "https://github.com/idtksvc/phaser3-typescript-webpack-project-template.git"
   },
   "bugs": {
     "url": "https://github.com/idtksvc/phaser3-typescript-webpack-project-template/issues"

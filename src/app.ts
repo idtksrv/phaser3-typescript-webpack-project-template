@@ -3,18 +3,27 @@ import GameConfig = Phaser.Types.Core.GameConfig;
 
 const config:GameConfig = {
     title: "Template",
-    width: 800,
-    height: 600,
+    width: 1920,
+    height: 1080,
     parent: "game",
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+    },
+    plugins: {
+        scene: [
+            { key: 'SpinePlugin', plugin: window.SpinePlugin, mapping: 'spine' }
+        ]
+    },
     backgroundColor: "#18216D"
 };
 
-export class StarfallGame extends Phaser.Game {
+export class App extends Phaser.Game {
     constructor(config:GameConfig) {
         super(config);
     }
 }
 
 window.onload = () => {
-    let game = new StarfallGame(config);
+    let app = new App(config);
 };
