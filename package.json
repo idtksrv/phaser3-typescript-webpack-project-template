@@ -1,0 +1,36 @@
+{
+  "name": "phaser3-typescript-webpack-project-template",
+  "version": "1.0.0",
+  "description": "A phaser3 typescript webpack template",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/idtksvc/phaser3-typescript-webpack-project-template/issues"
+  },
+  "homepage": "https://github.com/idtksvc/phaser3-typescript-webpack-project-template#readme",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "json-loader": "^0.5.7"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.5",
+    "live-server": "^1.2.1",
+    "mocha": "^8.1.0",
+    "phaser": "^3.24.1",
+    "should": "^13.2.3",
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "test": "mocha --timeout 10000 -r esm ",
+    "dev": "webpack --config webpack.development.config.js --watch & live-server --port=8085",
+    "prod": "webpack  --config webpack.production.config.js"
+  },
+  "author": "",
+  "license": "MIT"
+}
